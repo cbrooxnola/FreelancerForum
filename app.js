@@ -29,6 +29,9 @@ const freelancers = [
   { name: "Prof. Goose", price: 72, occupation: "driver" },
 ];
 //create table??
+
+//make column headers
+
 //create columns to add properties of one object at a time
 //create variable to calculate average as new entries populate list
 
@@ -53,40 +56,10 @@ const freelancers = [
 // render();
 
 //create running average as prices populate list
-const colors = ['red', 'blue', 'green', 'yellow'];
-const sizes = ['sm', 'md', 'lg', 'xl'];
-const types = ['square', 'circle'];
 
-function randomShape(){
-  const colorIdx = Math.floor(Math.random()*colors.length);
-  const sizeIdx = Math.floor(Math.random()*sizes.length);
-  const typeIdx = Math.floor(Math.random()*types.length);
-  const shape = {
-    color: colors[colorIdx],
-    size: sizes[sizeIdx],
-    type: types[typeIdx]
-  };
-  return shape;
-}
-
-const shapes = [
-  randomShape(),
-  randomShape()
-];
-
-function render(){
-  const html = shapes.map(function(shape, idx){
-    return `<div class='${shape.color} ${shape.size} ${shape.type}'>${idx}</div>`;
-  });
-  box.innerHTML = html.join('');
-}
-
-render();
-const i = setInterval(function(){
-  const newShape = randomShape();
-  shapes.push(newShape);
-  render();
-  if (shapes.length > 20){
-    clearInterval(i);
-  }
-}, 2000);
+//how should freelancers' information be displayed on the page
+// written and called a function to render the initial freelancer data
+//written a function to generate a new random freelancer
+//Is this function being called in an interval
+//Have you written a function to calculate the average starting price of your freelancers' array?
+//When should this function be called to update the displayed message?
