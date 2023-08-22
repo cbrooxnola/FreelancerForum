@@ -28,6 +28,10 @@ const freelancers = [
   { name: "Dr. Wire", price: 47, occupation: "teacher" },
   { name: "Prof. Goose", price: 72, occupation: "driver" },
 ];
+//create table??
+//create columns to add properties of one object at a time
+//create variable to calculate average as new entries populate list
+
 //add freelancers to list one at a time
 let count = 0;
 const list = [];
@@ -48,4 +52,4 @@ function render(){
 }
 render();
 
-//let avg = (sum / list)
+//create running average as prices populate list
